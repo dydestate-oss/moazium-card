@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f2e8" />
+  <meta name="description" content="모아지음 공인중개사무소 모바일 명함" />
+  <title>모아지음 공인중개사무소</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #f7f2e8; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+    }
+    .card {
+      position: relative;
+      width: min(100vw, 896px);
+      line-height: 0;
+      background: #fff;
+      overflow: hidden;
+    }
+    .card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .hotspot {
+      position: absolute;
+      display: block;
+      z-index: 10;
+      border-radius: 24px;
+      background: rgba(0,0,0,0);
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+    .hotspot:focus-visible {
+      box-shadow: inset 0 0 0 4px rgba(31, 91, 54, 0.55);
+    }
+
+    /* 원본 이미지(896×1648) 기준 좌표를 %로 환산 */
+    .phone {
+      left: 6.7%;
+      top: 70.2%;
+      width: 29.3%;
+      height: 10.5%;
+    }
+    .homepage {
+      left: 37.7%;
+      top: 70.2%;
+      width: 28.7%;
+      height: 10.5%;
+    }
+    .qr {
+      left: 75.0%;
+      top: 69.1%;
+      width: 20.5%;
+      height: 12.0%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-label="모아지음 공인중개사무소 모바일 명함">
+    <img src="moazium-card.png" alt="모아지음 공인중개사무소 모바일 명함" />
+
+    <!-- 전화상담 -->
+    <a class="hotspot phone"
+       href="tel:010801900049"
+       aria-label="모아지음 공인중개사무소 전화상담 010-80190-0049"
+       title="전화상담"></a>
+
+    <!-- 모바일 홈페이지 -->
+    <a class="hotspot homepage"
+       href="https://moazium-realestate.netlify.app/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="모아지음 모바일 홈페이지 열기"
+       title="모바일 홈페이지"></a>
+
+    <!-- QR 영역도 홈페이지로 연결 -->
+    <a class="hotspot qr"
+       href="https://moazium-realestate.netlify.app/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="모아지음 모바일 홈페이지 열기"
+       title="모바일 홈페이지"></a>
+  </main>
+</body>
+</html>
